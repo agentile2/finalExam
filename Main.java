@@ -12,7 +12,7 @@ public class Main {
 		System.out.println("Please enter file name: ");
 		String fileName = inputFile.nextLine();
 		inputFile.close();
-		Compiler compiler = new Compiler(fileName);
+		Compiler compiler = Compiler.create(fileName);
 	}
 
 	public class Token {
@@ -125,7 +125,7 @@ public class Main {
 	
 	
 	// Question 2: Compiler class
-			//takes in an input file and converts it to one input str
+	//takes in an input file and converts it to one input str
 			
 	public class Compiler {
 	    //Takes in an input file
